@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globo Cereais</title>
+
+    <style>
+
+      </style>
+</head>
+<body onload ="Reajustar('Contatos'), inicializar(18) , Reajustar('Rodape') " onresize="Reajustar('Contatos') , Reajustar('Rodape') " >
+    <header class = "menu-principal">
+        <main>
+            <div class = "header-1">
+                    <div class = "logo">
+                        <img src = "./img/logo.png"/>
+                    </div>   
+
+                    <div class = "Abas-Header">
+                        <ul>
+                            <li><button class = "button3"><div class = "text-button2">ENTRAR        </div></button></li>
+                            <li><button class = "button1" onclick= "Scroll(screen.width)"><div class = "text-button">Contato        </div></button></li>
+                            <li><button class = "button2"><div class = "text-button1">QUEM SOMOS     </div></button></li>
+                            <li><button class = "button2"><div class = "text-button1">AGRÓNEGOCIO    </div></button></li>
+                            <li><button class = "button2"><div class = "text-button1">NOTÍCIAS       </div></button></li>
+                            <li><button class = "button1"><div class = "text-button">Principal      </div></button></li>
+                        </ul>
+                    </div>
+            </div>
+        </main>
+    </header>
+    <div class = "fachada">
+        <img src = "./img/fachada.png">
+        <div class = "text1"> Entre em contato</div>
+    </div>
+    <div class="PaddingButtonMaps">
+        <div class="BoxButtonMaps">
+            <ul>
+                <li><div class="ButtonPad"></div><button class="ButtonMaps" onclick="inicializar(18)">Alinhar Mapa </button></li>
+                <li><div class="ButtonPad"></div><button class="ButtonMaps" onclick="inicializar(8) ">Mostrar Filiais </button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="boxForm">
+        <div class="formulario">
+            <div class="header2">
+                <div class="FormHeaderTxt"> Formulário</div>
+            </div>
+                <div class="Form">
+                    <ul>
+                        <ul>
+                            <li><div  class="form-padding"></div> <img src = ./img/FormIcon1.png class="FormImg"> <input class = "textform" type="text" id="NomeId" placeholder="Nome" required="required" name="nome" ></li>
+                            <li><div  class="form-padding"></div> <img src = ./img/FormIcon1.png class="FormImg"> <input class = "textform" type="text" id="EmailID" placeholder="contato@gmail.com" required="required" name="email" ></li>
+                            <li><div  class="form-padding"></div> <img src = ./img/FormIcon1.png class="FormImg"> <input class = "textform" type="text" id="MensagemID" placeholder="Mensagem" required="required" name="Mensagem" ></li>
+                        </ul>
+                    </ul>
+                </div>
+            <div class = "DivButton">
+                <input class= "FormButton" type="Button" value = "Enviar" onclick="Enviar()"> </input>
+            </div>
+        </div> 
+    </div>
+
+    <div id = "mapa"></div>
+
+
+    <script src="./js/mapa.js">
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr0D2WUXRfASmo4CxSBHN_xgglguP-ozM&callback=inicializar">
+    </script>
+
+    <div id = Contatos class="BoxContato">
+        <div class="PaddingBoxContato">
+            <div class="PaddingContatoTop">
+                <ul>
+                    <li><div class="TextContato1">Globo Cereais</div></li>
+                    <li><div class="TextContato2">A Globo Cereais é uma empresa de consultoria e comercialização de commodites agrícolas.</div></li>
+                    <li><div class="TextContato3">Você também pode  nos acompanhar nas redes sociais !!</div></li>
+                    <li><button class="ButtonContato" onclick="window.open('https://www.facebook.com/globocereais','_blank')"><div class="LogoContato"><img src = "img/FBicon.png"> /globocereais</div></button></li>
+                    <li><button class="ButtonContato" onclick="window.open('https://twitter.com/globocereais','_blank')"><div class="LogoContato"><img src = "img/TWicon.png"> @globocereais</div></button></li>
+                    <li><button class="ButtonContato" onclick="window.open('https://www.instagram.com/globocereais_gc/','_blank')"><div class="LogoContato"><img src = "img/INSicon.png"> @globocereais_gc</div></button></li>
+                </ul>
+            </div>     
+        </div>
+
+        <script>
+            
+        </script>
+
+        <div class="PaddingBoxContato2">
+            <div class="PaddingContatoTop2">
+                <ul>
+                    <li> <div class="TextContato4">Entre em contato com nossos consultores</div> </li>
+                    <li> <div class="TextContato5">Rio Verde/GO (Matriz)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Marcelo Sampaio <mark class="green"> (64) 99219-7822</mark>  </div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Elcio Cabral <mark class="green"> (64) 99958-1000</mark>  </div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Moacyr Martins <mark class="green"> (64) 99977-0143</mark>  </div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Gildo Marques <mark class="green"> (64) 9994-0120</mark>  </div> </li>
+                    <li> <div class="TextContato5">Jataí/GO (Filial)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Rafael <mark class="green"> (64) 9994-5047</mark>  </div> </li>
+                    <li> <div class="TextContato5">Chapadão do Céu/GO (Filial)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Kessia Garcia <mark class="green"> (64) 99618-8037</mark>  </div> </li>
+                    <li> <div class="TextContato5">Mineiros/GO (Filial)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Ricardo Furian <mark class="green"> (64) 99646-4848</mark>  </div> </li>
+                    <li> <div class="TextContato5">Indiara/GO (Filial)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Rogerio Dias <mark class="green"> (64) 99654-3878</mark>  </div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>Wesley Pereira <mark class="green"> (64) 99643-0340</mark>  </div> </li>
+                    <li> <div class="TextContato5">Indiara/GO (Filial)</div> </li>
+                    <li> <div class="TextContato6"><mark class="white"></mark>João Leiva <mark class="green"> (64) 99646-4848</mark>  </div> </li>
+                </ul>
+            </div>     
+        </div>
+    </div>
+    <div id="Rodape" class = "Rodape">
+        <div class="Direitos">@2020 Todos os direitos reservados a Globo Acessoria Comercial Ltda.</div>
+    </div>
+    <script src="./js/funcoes.js"></script>
+
+</body>
+</html>
